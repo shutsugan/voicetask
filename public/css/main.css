@@ -24,14 +24,18 @@ html, body {
   color:var(--second-color) !important;
 }
 
+.mdl-card {
+  min-height: auto;
+}
+
 .demo-card-wide.mdl-card {
   width: 100%;
 }
 
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  height: 176px;
-  background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+  height: 67px;
+  background: var(--first-color);
 }
 
 .demo-card-wide > .mdl-card__menu {
@@ -64,6 +68,32 @@ html, body {
   opacity: .4;
 }
 
-.mdl-dialog{
+.mdl-dialog {
   width: 80%;
 }
+
+.mdl-layout__header-row {
+  padding-left: 16px;
+}
+
+.mdl-layout-title {
+  text-transform: uppercase;
+  font-weight: 600px;
+  font-size: 16px;
+}
+
+.mdl-card__title-text {
+  align-self: center;
+  font-size: 20px;
+}
+
+.mdl-button.mdl-button--colored {
+  color: #FFF;
+}
+
+.command {
+  line-height: 2;
+}
+
+body.offline a{opacity:.3;pointer-events:none}
+body.offline a.cached{opacity:1;pointer-events:initial}

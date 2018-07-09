@@ -91,7 +91,7 @@ export default class VoiceCommand {
 
       //split command and task.
       const result = transcript.split(' ')
-      const command = result.shift();
+      const command = result.shift().toLowerCase();
       const task = result;
 
       console.log(confidence);
@@ -102,7 +102,7 @@ export default class VoiceCommand {
       if (confidence >= 0.7) {
         if (this._nav_commands.includes(command)) callback(null, command, null);
         else if (this._commands.includes(command)) callback(null, command, task);
-        else callback('Command not found, please see the commands list.', command, task);
+        else callback(`${command} command not found, please see the commands list.`, command, task);
       } else {
         callback('Not sure what do you mean?', command, task);
       }
