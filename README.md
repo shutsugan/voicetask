@@ -2,7 +2,7 @@
 Get your tasks done using only voice commands.
 
 The app uses voice recognition to manage tasks,
-check it out on [shopers](https://evening-escarpment-81214.herokuapp.com/)
+check it out on [voicetask](https://evening-escarpment-81214.herokuapp.com/)
 
 ## Running Locally
 
@@ -33,7 +33,7 @@ To run the application in development mode:
 
 To run the deployed app:
 
-[here](https://sleepy-mesa-12188.herokuapp.com/)
+[here](https://evening-escarpment-81214.herokuapp.com)
 
 ### Front-end
 
